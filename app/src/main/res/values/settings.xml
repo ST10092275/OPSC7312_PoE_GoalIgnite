@@ -1,0 +1,73 @@
+<!-- res/layout/activity_settings.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_profile_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Settings"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Update Name" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Update Email" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Update Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_update_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Profile" />
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#ccc" />
+
+    <TextView
+        android:id="@+id/tv_theme_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Theme Settings"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/rb_light" android:text="Light Theme" />
+        <RadioButton android:id="@+id/rb_dark" android:text="Dark Theme" />
+    </RadioGroup>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#ccc" />
+
+    <TextView
+        android:id="@+id/tv_language_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Language Settings"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinner_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
