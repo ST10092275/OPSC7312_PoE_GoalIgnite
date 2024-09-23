@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEditContact"
+    android:id="@+id/main">
+
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="15dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/back"
+        android:src="@drawable/baseline_arrow_back" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/teacher_contact"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:padding="@dimen/_10sdp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/teacher"
+        android:layout_gravity="center"
+        app:civ_border_width="@dimen/_1sdp"
+        app:civ_border_color="@android:color/holo_blue_light"/>
+
+
+<!-- edittext for input-->
+    <EditText
+        android:id="@+id/nameTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:background="@drawable/background_input_field"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:drawableStart="@drawable/baseline_short_text"
+        android:drawablePadding="@dimen/_5sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/phoneTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:background="@drawable/background_input_field"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:drawableStart="@drawable/baseline_phone"
+        android:drawablePadding="@dimen/_5sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/emailTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        android:background="@drawable/background_input_field"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:drawableStart="@drawable/baseline_email"
+        android:drawablePadding="@dimen/_5sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/subjectTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/subject"
+        android:inputType="textLongMessage"
+        android:textColorHint="@color/black"
+        android:background="@drawable/background_input_field"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:drawableStart="@drawable/baseline_subject"
+        android:drawablePadding="@dimen/_5sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>
+
+    <!--  button to add data to database-->
+    <Button
+        android:id="@+id/newContactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="131dp"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:background="@drawable/button_rounded"/>
+
+
+</RelativeLayout>

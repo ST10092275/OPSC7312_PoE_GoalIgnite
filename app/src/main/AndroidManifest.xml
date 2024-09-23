@@ -13,6 +13,12 @@
         android:theme="@style/Theme.OPSC7213_GoalIgnite"
         tools:targetApi="31">
         <activity
+            android:name=".ContactDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AddEditContact"
+            android:exported="true"></activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
