@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -11,7 +10,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OPSC7213_GoalIgnite"
-        tools:targetApi="31">
+        >
+        <activity
+            android:name=".Password"
+            android:exported="false" />
+
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Apple"
+            android:exported="false" />
+        <activity
+            android:name=".Google"
+            android:exported="false" />
+        <activity
+            android:name=".Facebook"
+            android:exported="false" />
         <activity
             android:name=".ContactDetails"
             android:exported="false" />
@@ -20,6 +35,9 @@
             android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
