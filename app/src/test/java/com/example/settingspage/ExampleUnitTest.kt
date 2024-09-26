@@ -1,4 +1,4 @@
-package com.example.opsc7213_goalignite
+package com.example.settingspage
 
 import org.junit.Test
 
