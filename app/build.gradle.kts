@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.settingspage"
+    namespace = "com.example.settingsapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.settingspage"
+        applicationId = "com.example.settingsapp"
         minSdk = 25
         targetSdk = 34
         versionCode = 1
@@ -63,6 +63,10 @@ dependencies {
     implementation("androidx.compose.material:material:1.7.2")
     implementation("androidx.navigation:navigation-compose:2.8.1")
     implementation("androidx.security:security-crypto:1.1.0-alpha06")
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentGrades"
+    tools:ignore="VisualLintBounds">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_gravity="bottom"
+        android:hint="@string/enter_marks3"
+        android:imeOptions="actionDone"
+        android:layout_width="424dp"
+        android:layout_height="52dp"
+        android:textColor="#100F0F"
+        android:textColorHint="#0F0E0E"
+        android:layout_marginTop="12dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:visibility="gone" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addGradeFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/marks"
+        android:src="@drawable/add"
+        app:fabSize="normal" />
+
+    <LinearLayout
+        android:id="@+id/addGradeDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_marks"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/marksEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/enter_marks"
+            android:inputType="numberDecimal" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
